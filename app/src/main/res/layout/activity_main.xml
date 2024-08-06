@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_picture"
+    tools:context=".page.MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="350dp"
+        android:layout_height="370dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="158dp"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/theme_color3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/account"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn"
+                android:hint="请输入手机号"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:paddingHorizontal="5dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/theme_color3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn"
+                android:hint="请输入密码"
+
+                android:imeOptions="actionDone"
+                android:paddingHorizontal="5dp"
+                android:textColorHint="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            >
+            <RadioGroup
+                android:id="@+id/rg_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:checked="true"
+                    android:text="@string/teacher"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:text="@string/student"
+                    android:textSize="17sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="#FFFFFF"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="登录"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="60dp"
+            android:textColor="@color/black"
+            app:cornerRadius="15sp"
+            app:icon="@drawable/right"
+            app:iconSize="30dp"
+            app:iconTint="@color/black"
+            app:strokeColor="@color/teal_200"
+            app:strokeWidth="2dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/register"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingHorizontal="60dp"
+            android:gravity="center_vertical"
+            android:text="注册"
+            android:textColor="@color/black"
+            app:cornerRadius="15sp"
+            app:icon="@drawable/right"
+            app:iconSize="30dp"
+            app:iconTint="@color/black"
+            app:strokeColor="@color/teal_200"
+            app:strokeWidth="2dp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="忘记密码？"
+            android:textColor="#1C1B1B"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="265dp"
+            android:text="我们即将踏上学习之路@双亲新手训练营"
+            android:textColor="#222020"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="1dp"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:paddingTop="3dp">
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
+
