@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_picture"
-    tools:context=".page.MainActivity">
+    tools:context=".MainActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="350dp"
@@ -51,7 +51,7 @@
             app:passwordToggleTint="@color/theme_color3">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/password"
+                android:id="@+id/rgrade"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/btn"
